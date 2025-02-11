@@ -1,49 +1,14 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# Node modules
+node_modules/
+npm-debug.log
+yarn-error.log
 
-# Virtual Environment
-venv/
-env/
-
-# Editor & IDE settings
-.vscode/
-.idea/
-*.swp
-*.swo
-
-# Logs and database files
+# Logs
 logs/
 *.log
-*.sqlite3
 
 # Environment variables
 .env
-.env.local
-.env.*.backup
-
-# Pytest & Coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-coverage.xml
-*.cover
-.cache
-nosetests.xml
-pytest_cache/
-junit.xml
-
-# Jupyter Notebooks
-.ipynb_checkpoints
-
-# FastAPI specific
-instance/
-debug.log
 
 # Dependency directories
-node_modules/
-
-# Docker
-docker-compose.override.yml
+package-lock.json
