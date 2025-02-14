@@ -23,7 +23,7 @@ exports.addPet = async (req, res) => {
         );
 
         if (!user) {
-            return res.status(404).json({ error: "User not found. Cannot add pet." });
+            return res.status(400).json({ error: "User not found. Cannot add pet." });
         }
 
         // Save pet after ensuring user exists

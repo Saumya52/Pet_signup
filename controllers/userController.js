@@ -50,7 +50,7 @@ exports.getUsers = async (req, res) => {
 
             users = await User.findById(user_id).populate("pets");
             if (!users) {
-                return res.status(404).json({ error: "User not found." });
+                return res.status(400).json({ error: "User not found." });
             }
         } else {
             users = await User.find().populate("pets");
